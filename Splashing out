@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	
+
+		cout << "Enter the amount of money you have." << endl;
+	cin >> x;
+
+	
+	if (x >= 25)
+	{
+		cout << "Buy computer game " << endl;
+		x-25;
+		
+	}
+	else
+	{
+		cout << "I need to save up more cash " << endl;
+	}
+
+	cout << "You have " << x-25 << " amount of money left " << endl;
+	return 0;
+}
