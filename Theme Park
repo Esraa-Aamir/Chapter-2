@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double age, height;
+	cout << "Enter your age" << endl;
+	cin >> age;
+	cout << "Enter you height(in metres)" << endl;
+	cin >> height;
+	if (age >= 5 && height > 0.6)
+	{
+		cout << "You are eligible to ride" << endl;
+	}
+	else
+	{
+		cout << "You are not eligible to ride" << endl;
+
+	}
+	return 0;
+}
