@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Hello please enter an option" << endl;
+    cout << "F to conver from Fahrenheit to Celsius" << endl;
+    cout << "C to convert from Celsius to Fahrenheit " << endl;
+    float fahrenheit;
+    float celsius;
+    char ans;
+    cin >> ans;
+    switch (ans)
+    {
+    case 'f':
+    case 'F':
+    { cout << "Enter the temperature in Farenheit" << endl;
+    cin >> fahrenheit;
+    cout << fahrenheit << "fahrenheit is " << (fahrenheit - 32) * 5 / 9 << " in celsius." << endl;
+    break;
+    }
+    case 'c':
+    case 'C':
+    {
+        cout << "Enter the temperature in celsius: " << endl;
+        cin >> celsius;
+        cout << celsius << " celsius is " << (celsius * 9 / 5 + 32) << "in fahrenheit." << endl;
+    }
+    {
+    default:
+    }
+    cout << " You entered an invalid option" << endl;
+    break;
+    }
+
+    return 0;
+}
+
